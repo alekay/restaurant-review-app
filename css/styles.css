@@ -14,23 +14,25 @@ body {
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+  font-size: 10pt;
+  padding: 1%;
 	color: #333;
 }
 a {
 	color: orange;
-	text-decoration: none;
+  text-decoration: none;
+  margin: auto;
 }
 a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
 }
 a img{
-	border: none 0px #fff;
+  border: none 0px #fff;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 20px;
+
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -111,6 +113,9 @@ nav h1 a {
   height: 50px;
   background-color: #3397DB;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+
 }
 .filter-options h2 {
   color: white;
@@ -123,12 +128,10 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 11pt;
-  height: 35px;
-  letter-spacing: 0;
-  margin: 10px;
-  padding: 0 10px;
-  width: 200px;
+}
+
+ #neighborhoods-select, #cuisines-select {
+  margin: 1%;
 }
 
 /* ====================== Restaurant Listing ====================== */
