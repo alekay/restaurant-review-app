@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+ 
+  display: flex;
+}
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
@@ -36,6 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+p, h1 {
+  padding: 0.3rem;
 }
 #maincontent {
   background-color: #f3f3f3;
@@ -122,7 +129,7 @@ nav h1 a {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
-  margin: 0 20px;
+  margin: 0 2%;
 }
 .filter-options select {
   background-color: white;
@@ -182,10 +189,10 @@ nav h1 a {
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 10pt;
-  margin: 15px 0 0;
+  position: center;
+  font-size: 1.3em;
+  margin: 3% 0 0;
   padding: 8px 30px 10px;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -286,19 +293,14 @@ nav h1 a {
 
 
 @media screen and  (min-width: 768px) and (max-width: 1024px)  {
-  li #restaurants-list {
- /* set conditions here */
-  display: inline-flex;
-  padding: 0.2rem;
+  #restaurants-list li a {
+    margin: 2% 0 0;
   }
 }
 
 
 @media screen and (max-width: 767px)  {
-  li #restaurants-list {
-/* set conditions here */
-  display: inline-flex;
-  flex-direction: column;
-  padding: 0.1rem;
+  #restaurants-list li a {
+    margin: 1% 0 0;
   }
 }
