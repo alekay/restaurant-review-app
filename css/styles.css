@@ -19,7 +19,7 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: #f18200;
   text-decoration: none;
   margin: auto;
 }
@@ -53,8 +53,8 @@ p, h1 {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 
@@ -70,8 +70,6 @@ nav h1 {
   margin: auto;
 }
 nav h1 a {
-  color: #fff;
-  font-size: 14pt;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -330,7 +328,7 @@ nav h1 a {
     font-size: 0.7em;
   }
   .footer-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -357,3 +355,14 @@ nav h1 a {
   }
 }
 
+.name {
+  color: #0275d8;
+}
+
+.date {
+  color: #f18200;
+}
+
+.rating {
+  color: #0275d8;
+}

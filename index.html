@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,24 +17,25 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="map of restaurants" role="application"></div>
     </section>
     <section>
-      <div class="filter-options">
+      <div class="filter-options" tabindex="0" aria-label="filter results">
         <h2>Filter Results</h2>
-        <select aria-label="select neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" aria-label="select neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select aria-label="select cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" aria-label="select cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" tabindex="0" aria-label="list of restaurants"></ul>
     </section>
   </main>
  
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/sw.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVkxZCh07zI5spiaAnBhKGcAUHD0U5zUI&libraries=places&callback=initMap"></script>
 
 
