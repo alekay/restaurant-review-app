@@ -4,11 +4,9 @@ let restaurants,
 var newMap
 var markers = []
 
-/**
- * Fetch neighborhoods and cuisines as soon as the page is loaded.
- */
+// initialize service worker and fetch
 document.addEventListener('DOMContentLoaded', (event) => {
-  initMap(); // added 
+  DBHelper.swRegister();
   fetchNeighborhoods();
   fetchCuisines();
 });
@@ -178,14 +176,5 @@ addMarkersToMap = (restaurants = self.restaurants) => {
       window.location.href = marker.url
     });
     self.markers.push(marker);
-  });
-}
-
-// Service worker
-if('serviceworker' in navigator) {
-  navigator.serviceworker
-  .regiseter('/sw.js')
-  .catch(function(err) {
-    console.error(err);
   });
 }
