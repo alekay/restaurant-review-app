@@ -20,6 +20,7 @@ let urlsToCache = [
   'img/10.jpg'
 ];
 
+// install
 self.addEventListener('install', function(event) {
   console.log('SW is installed');
 
@@ -31,6 +32,7 @@ self.addEventListener('install', function(event) {
   );
 });
 
+// activate
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
@@ -47,6 +49,7 @@ self.addEventListener('activate', function(event) {
   );
 });
 
+// fetch
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
